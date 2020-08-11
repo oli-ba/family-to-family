@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-colorPrimary text-colorSecondary">
+  <section class="bg-colorSecondary text-colorPrimary">
     <div class="flex flex-col">
       <div class="flex-col px-6 md:px-40 py-16">
         <blockquote

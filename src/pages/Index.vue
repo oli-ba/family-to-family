@@ -19,8 +19,8 @@
 
       </div>
     </section>
-    <Partnerships />
     <InstaFeed />
+    <Partnerships />
     <Testimonial />
   </Layout>
 </template>
@@ -67,7 +67,7 @@ export default {
     link: [
       {
         rel: "canonical",
-        href: "https://family-to-family.netlify.app/"
+        href: "https://www.familytofamilybeirut.com"
       }
     ],
     meta: [
@@ -81,11 +81,11 @@ export default {
       },
       {
         property: "og:image",
-        content: "https://family-to-family.netlify.app/og-image.png"
+        content: "https://www.familytofamilybeirut.com/og-image.png"
       },
       {
         property: "og:url",
-        content: "https://family-to-family.netlify.app"
+        content: "https://www.familytofamilybeirut.com"
       },
       {
         property: "og:type",

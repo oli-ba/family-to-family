@@ -5,8 +5,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Family to Family - Beirut Relief Fund',
-  siteUrl: 'https://family-to-family.netlify.app',
+  siteName: 'Family to Family Beirut Relief Fund',
+  siteUrl: 'https://www.familytofamilybeirut.com',
   siteDescription: "The economic crisis and hyperinflation means that getting money and aid into the hands of those who need it is harder than it's ever been.",
   resolveAbsolutePaths: true,
   plugins: [

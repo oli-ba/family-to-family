@@ -1,5 +1,5 @@
 <template>
-  <section class="py-32">
+  <section class="md:py-32 pb-16">
     <div v-if="photos" class="grid grid-cols-3 gap-4">
       <div v-for="(post, index) in photos.edges"
         :key="index">
