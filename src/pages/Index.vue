@@ -1,8 +1,8 @@
 <template>
   <Layout class="bg-colorSecondary">
     <!-- <Header v-show="hasName == false" /> -->
-    <section class="hero text-colorPrimary flex flex-col justify-center pb-0 h-full">
-      <div class="md:py-12 md:w-4/5">
+    <section class="hero text-colorPrimary flex flex-col justify-center md:items-center pb-0 h-full">
+      <div class="md:py-12 md:w-4/5 md:text-center">
         <!-- <p class="font-bold">
           &mdash; Hello <span v-show="hasName == true">{{name}},</span> I'm o·li·vyé. 
         </p> -->
@@ -10,11 +10,11 @@
           Family to Family <br class="hidden md:block">Beirut Relief Fund
         </h1>
         <!-- <h2 class="leading-tight mb-6">Beirut Relief Fund</h2> -->
-        <p class="font-body  mb-4 lg:w-45ch md:w-full">
+        <p class="font-body mb-6 lg:w-45ch md:w-full md:m-auto md:mb-6">
           Get aid directly to families in dire need of help today.
         </p>
     
-        <a href="https://gf.me/u/ynbtmw" class="cta text-colorSecondary bg-colorPrimary mt-2 mb-8 text-xl">Donate Now</a>
+        <a href="https://gf.me/u/ynbtmw" class="cta text-colorSecondary bg-colorPrimary mt-2 mb-16 text-xl">Donate Now</a>
         
 
       </div>
