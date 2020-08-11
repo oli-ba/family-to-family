@@ -57,7 +57,7 @@ section, .section, header, footer {
   }
 }
 h1 {
-  @apply text-5xl;
+  @apply text-4xl;
   @screen lg {
     @apply text-6xl leading-tight;
   }

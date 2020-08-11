@@ -10,8 +10,8 @@
           Family to Family <br class="hidden md:block">Beirut Relief Fund
         </h1>
         <!-- <h2 class="leading-tight mb-6">Beirut Relief Fund</h2> -->
-        <p class="font-body mb-6 lg:w-45ch md:w-full md:m-auto md:mb-6">
-          Get aid directly to families in dire need of help today.
+        <p class="font-body mb-6 lg:w-55ch md:w-full md:m-auto md:mb-6">
+          Sarah &amp; Family are getting aid directly to families in dire need of help today. Donate &amp; keep up with our progress&nbsp;here.
         </p>
     
         <a href="https://gf.me/u/ynbtmw" class="cta text-colorSecondary bg-colorPrimary mt-2 mb-16 text-xl">Donate Now</a>
