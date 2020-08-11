@@ -1,11 +1,13 @@
 <template>
-  <section class="mx-16">
-    <!-- <h2>Latest Instagram Feed</h2> -->
-    <div class="grid grid-cols-3 gap-4">
-      <div v-for="edge in $static.allInstagramPhoto.edges" :key="edge.node.id" class="bg-gray-400 ">
-        <a :href="edge.node.is_video ? edge.node.video_url : edge.node.display_url" target="_blank" rel="noopener noreferrer">
-          <!-- <img :src="[!edge.node.is_video ? edge.node.video_url : edge.node.display_url]" alt="" class="object-contain"> -->
-          <img :src="edge.node.thumbnail_src" :alt="!edge.node.accessibility_caption == '' ? edge.node.accessibility_caption : 'Photo by @family_to_family_beirut'" class="object-contain">
+  <section>
+    <div v-if="photos" class="grid grid-cols-3 gap-4">
+      <div v-for="(post, index) in photos.edges"
+        :key="index">
+        <a :href="`https://www.instagram.com/p/${post.node.shortcode}/`">
+          <img class="object-contain"
+            :src="post.node.thumbnail_src"
+            :alt="post.node.accessibility_caption"
+          />
         </a>
       </div>
     </div>
@@ -14,25 +16,29 @@
 <style scoped>
 
 </style>
-<static-query>
-query {
-  allInstagramPhoto {
-    edges {
-      node {
-        display_url
-        video_url
-        thumbnail_src
-        is_video
-        accessibility_caption
-        edge_media_to_caption {
-          edges {
-            node {
-              text
-            }
-          }
-        }
+<script>
+import axios from 'axios'
+
+export default {
+    name: 'Footer',
+    data () {
+      return {
+        photos: null
+      }
+    },
+    async mounted () {
+      try {
+        const igProfileJson = await axios.get(
+          `https://www.instagram.com/family_to_family_beirut/?__a=1`
+        )
+        this.photos = igProfileJson.data.graphql.user.edge_owner_to_timeline_media
+
+        // might want to log this during your testing so you can see the object you need to traverse
+        console.log(this.photos)
+      } catch (error) {
+        console.log(error)
       }
     }
   }
-}
-</static-query>
+
+</script>
