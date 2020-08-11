@@ -20,6 +20,7 @@
       </div>
     </section>
     <Partnerships />
+    <InstaFeed />
     <Testimonial />
   </Layout>
 </template>
@@ -58,6 +59,7 @@ span.cursor.typing {
 <script>
 import Partnerships from "~/components/Partnerships.vue";
 import Testimonial from "~/components/Testimonial.vue";
+import InstaFeed from "~/components/InstaFeed.vue";
 
 export default {
   metaInfo: {
@@ -101,7 +103,8 @@ export default {
   },
   components: {
     Partnerships,
-    Testimonial
+    Testimonial,
+    InstaFeed
   },
   beforeCreate() {
     // this.$store.commit('setName', this.$route.query.hello)
