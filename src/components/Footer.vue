@@ -3,7 +3,8 @@
     class="flex flex-col md:flex-row justify-between items-center text-colorSecondary bg-colorPrimary w-screen py-8"
   >
     <div class="mt-6 md:mt-0">
-      &copy; {{ new Date().getFullYear() }} {{ $static.metadata.siteName }}.
+      <!-- &copy; {{ new Date().getFullYear() }} {{ $static.metadata.siteName }} -->
+      &copy; {{ new Date().getFullYear() }} Family to Family Beirut Relief Fund
     </div>
     <div class="w-full md:w-1/5 order-first md:order-last">
       <ul class="flex justify-around text-sm">

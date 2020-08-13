@@ -1,5 +1,6 @@
 <template>
-  <section class="md:py-32 pb-16">
+  <section class="md:py-28 pb-16">
+    <h3 class="text-colorPrimary py-8 text-center">Latest From Instagram</h3>
     <div v-if="photos" class="grid grid-cols-3 gap-4">
       <div v-for="(post, index) in photos.edges"
         :key="index">
@@ -20,7 +21,6 @@
 import axios from 'axios'
 
 export default {
-    name: 'Footer',
     data () {
       return {
         photos: null
@@ -34,11 +34,10 @@ export default {
         this.photos = igProfileJson.data.graphql.user.edge_owner_to_timeline_media
 
         // might want to log this during your testing so you can see the object you need to traverse
-        console.log(this.photos)
+        // console.log(this.photos)
       } catch (error) {
         console.log(error)
       }
     }
   }
-
 </script>

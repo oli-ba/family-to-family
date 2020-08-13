@@ -5,9 +5,9 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Family to Family - Beirut Relief Fund',
+  siteName: 'Family to Family | Beirut Relief Fund | Helping Families in Need',
   siteUrl: 'https://familytofamilybeirut.com',
-  siteDescription: "The economic crisis and hyperinflation means that getting money and aid into the hands of those who need it is harder than it's ever been.",
+  siteDescription: "Family to Family was set up by Sarah Sakaan and her family to provide aid directly to Lebanese families affected by the Beirut blast. Donate now.",
   resolveAbsolutePaths: true,
   plugins: [
     {use: 'gridsome-plugin-tailwindcss'},
