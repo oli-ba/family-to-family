@@ -8,7 +8,8 @@
         </div>
         <audio
         controls
-        src="/audio/20200812_rteradio1-todayradio-beiruttryi_c21817384_21817393_232_.mp3" type='audio/mpeg; codecs="mp3"'>
+        src="/audio/20200812_rteradio1-todayradio-beiruttryi_c21817384_21817393_232_.mp3"
+        type="audio/mpeg">
           Your browser does not support the <code>audio</code> element.
         </audio>
       </div>
@@ -18,7 +19,8 @@
         </div>
         <audio
         controls
-        src="/audio/F2F-BBC-Radio4.mp3" type='audio/mpeg; codecs="mp3"'>
+        src="/audio/F2F-BBC-Radio4.mp3"
+        type="audio/mpeg">
           Your browser does not support the <code>audio</code> element.
         </audio>
       </div>
