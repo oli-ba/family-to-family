@@ -44,7 +44,7 @@ export default {
     async mounted () {
       try {
         const igProfileJson = await axios.get(
-          `https://www.instagram.com/family_to_family_beirut/?__a=1`,
+          `https://www.instagram.com/family_to_family_beirut/?__a=1`
           // { headers: {
           //   'User-Agent': 'Mozilla/5.0 (X11; CrOS x86_64 8172.45.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.64 Safari/537.36',
           //   } 
@@ -53,7 +53,7 @@ export default {
         this.photos = igProfileJson.data.graphql.user.edge_owner_to_timeline_media
 
         // might want to log this during your testing so you can see the object you need to traverse
-        console.log(igProfileJson)
+        // console.log(igProfileJson)
       } catch (error) {
         console.log(error)
       }

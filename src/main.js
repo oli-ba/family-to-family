@@ -3,6 +3,8 @@
 
 import DefaultLayout from '~/layouts/Default.vue';
 import VueClipboard from 'vue-clipboard2';
+import AudioVisual from 'vue-audio-visual'
+
 
 require('typeface-libre-baskerville')
 require('typeface-kulim-park')
@@ -10,6 +12,7 @@ require('typeface-kulim-park')
 
 export default function (Vue, { router, head, isClient, appOptions }) {
   Vue.use(VueClipboard)
+  Vue.use(AudioVisual)
   // Vue.use(Vuex)
   
   // appOptions.store = new Vuex.Store({
