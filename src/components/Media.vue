@@ -2,7 +2,7 @@
   <section class="md:py-28 pb-16">
     <h3 class="text-colorPrimary py-8 text-center">In The Media</h3>
     <div class="flex flex-wrap justify-center">
-      <div class="rounded-lg overflow-hidden m-3" style="background-color: #57a9d3">
+      <div class="rounded-lg overflow-hidden m-3 p-3" style="background-color: #57a9d3">
         <div class="flex justify-center items-center h-32">
           <RPLogo />
         </div>
@@ -13,7 +13,7 @@
           Your browser does not support the <code>audio</code> element.
         </audio>
       </div>
-      <div class="rounded-lg overflow-hidden m-3" style="background-color: #036">
+      <div class="rounded-lg overflow-hidden m-3 p-3" style="background-color: #036">
         <div class="flex justify-center items-center h-32">
           <BBC4 />
         </div>

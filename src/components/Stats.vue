@@ -1,5 +1,5 @@
 <template>
-  <p class="font-bold">{{fundProgress}}</p>
+  <p class="font-bold mb-6" style="height:30px">{{fundProgress}}</p>
 </template>
 <script>
 import axios from 'axios'
