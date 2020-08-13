@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Family to Family - Beirut Relief Fund',
-  siteUrl: 'https://www.familytofamilybeirut.com',
+  siteUrl: 'https://familytofamilybeirut.com',
   siteDescription: "The economic crisis and hyperinflation means that getting money and aid into the hands of those who need it is harder than it's ever been.",
   resolveAbsolutePaths: true,
   plugins: [

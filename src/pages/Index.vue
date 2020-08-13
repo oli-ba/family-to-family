@@ -67,7 +67,7 @@ export default {
     link: [
       {
         rel: "canonical",
-        href: "https://www.familytofamilybeirut.com"
+        href: "https://familytofamilybeirut.com"
       }
     ],
     meta: [
@@ -81,11 +81,11 @@ export default {
       },
       {
         property: "og:image",
-        content: "https://www.familytofamilybeirut.com/og-image.png"
+        content: "https://familytofamilybeirut.com/og-image.png"
       },
       {
         property: "og:url",
-        content: "https://www.familytofamilybeirut.com"
+        content: "https://familytofamilybeirut.com"
       },
       {
         property: "og:type",
