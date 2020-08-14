@@ -21,13 +21,6 @@ module.exports = {
         pathPrefix: '/updates', // Add route prefix. Optional
         template: './src/templates/Template_blog.vue' // Optional
       }
-    },
-    {
-      use: '@zefman/gridsome-source-instagram',
-      options: {
-        username: 'family_to_family_beirut', // Instagram username
-        typeName: 'InstagramPhoto' // The GraphQL type you want the photos to be added under. Defaults to InstagramPhoto
-      }
     }
   ]
 }
