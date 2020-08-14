@@ -4,6 +4,7 @@
 import DefaultLayout from '~/layouts/Default.vue';
 import VueClipboard from 'vue-clipboard2';
 
+
 require('typeface-libre-baskerville')
 require('typeface-kulim-park')
 // import Vuex from 'vuex'

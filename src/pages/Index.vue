@@ -10,16 +10,23 @@
           Family to Family <br class="hidden md:block">Beirut Relief Fund
         </h1>
         <!-- <h2 class="leading-tight mb-6">Beirut Relief Fund</h2> -->
-        <p class="font-body mb-6 lg:w-55ch md:w-full md:m-auto md:mb-6">
+        <p class="font-body lg:w-55ch md:w-full md:m-auto">
           Sarah &amp; Family are getting aid directly to families in dire need of help today. Donate &amp; keep up with our progress&nbsp;here.
         </p>
+
+        <Stats />
     
-        <a href="https://gf.me/u/ynbtmw" class="cta text-colorSecondary bg-colorPrimary mt-2 mb-16 text-xl">Donate Now</a>
-        
+        <a 
+          href="https://www.gofundme.com/f/sakaan-family-beirut-emergency-fund/donate" 
+          class="cta text-colorSecondary bg-colorPrimary text-xl">
+          Donate Now
+        </a>
+        <!-- <a href="https://gf.me/u/ynbtmw" class="cta text-colorSecondary bg-colorPrimary mt-2 mb-16 text-xl">Donate Now</a> -->
 
       </div>
     </section>
     <InstaFeed />
+    <Media />
     <Partnerships />
     <Testimonial />
   </Layout>
@@ -60,51 +67,16 @@ span.cursor.typing {
 import Partnerships from "~/components/Partnerships.vue";
 import Testimonial from "~/components/Testimonial.vue";
 import InstaFeed from "~/components/InstaFeed.vue";
+import Media from "~/components/Media.vue";
+import Stats from "~/components/Stats.vue";
 
 export default {
-  metaInfo: {
-    title: "Home",
-    link: [
-      {
-        rel: "canonical",
-        href: "https://www.familytofamilybeirut.com"
-      }
-    ],
-    meta: [
-      {
-        property: "og:title",
-        content: "Family to Family - Beirut Relief Fund"
-      },
-      {
-        property: "og:description",
-        content: "Get aid directly to families in dire need of help today"
-      },
-      {
-        property: "og:image",
-        content: "https://www.familytofamilybeirut.com/og-image.png"
-      },
-      {
-        property: "og:url",
-        content: "https://www.familytofamilybeirut.com"
-      },
-      {
-        property: "og:type",
-        content: "website"
-      },
-      {
-        name: "twitter:title",
-        content: "Family to Family - Beirut Relief Fund"
-      },
-      {
-        name: "twitter:card",
-        content: "Get aid directly to families in dire need of help today"
-      }
-    ]
-  },
   components: {
     Partnerships,
     Testimonial,
-    InstaFeed
+    InstaFeed,
+    Media,
+    Stats
   },
   beforeCreate() {
     // this.$store.commit('setName', this.$route.query.hello)
@@ -166,6 +138,55 @@ export default {
         setTimeout(this.typeText, this.typingSpeed + 1000);
       }
     }
+  },
+  metaInfo: {
+    title: 'Family to Family | Beirut Relief Fund | Helping Families in Need',
+    titleTemplate: '%s',
+    script: [
+      { src: 'https://www.gofundme.com/static/js/embed.js', async: true, defer: true }
+    ],
+    // metaInfo: {
+    //   htmlAttrs: {
+    //     lang: 'en',
+    //     amp: true
+    //   }
+    // },
+    link: [
+      {
+        rel: "canonical",
+        href: "https://familytofamilybeirut.com"
+      }
+    ],
+    meta: [
+      {
+        property: "og:title",
+        content: "Family to Family | Beirut Relief Fund | Helping Families in Need"
+      },
+      {
+        property: "og:description",
+        content: "Family to Family was set up by Sarah Sakaan and her family to provide aid directly to Lebanese families affected by the Beirut blast. Donate now."
+      },
+      {
+        property: "og:image",
+        content: "https://familytofamilybeirut.com/og-image.png"
+      },
+      {
+        property: "og:url",
+        content: "https://familytofamilybeirut.com"
+      },
+      {
+        property: "og:type",
+        content: "website"
+      },
+      {
+        name: "twitter:title",
+        content: "Family to Family | Beirut Relief Fund | Helping Families in Need"
+      },
+      {
+        name: "twitter:card",
+        content: "Family to Family was set up by Sarah Sakaan and her family to provide aid directly to Lebanese families affected by the Beirut blast. Donate now."
+      }
+    ]
   }
 };
 </script>
