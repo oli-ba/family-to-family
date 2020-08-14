@@ -6,33 +6,33 @@
         <div class="flex justify-center items-center h-32">
           <RPLogo />
         </div>
-        <av-line
+        <!-- <av-line
           :line-width="2"
           line-color="#fff"
-          audio-src="/audio/20200812_rteradio1-todayradio-beiruttryi_c21817384_21817393_232_.mp3"
-        ></av-line>
-        <!-- <audio
+          audio-src="https://static.olivierbalaguer.com/audio/20200812_rteradio1-todayradio-beirut.mp3"
+        ></av-line> -->
+        <audio
         controls
-        src="/audio/20200812_rteradio1-todayradio-beiruttryi_c21817384_21817393_232_.mp3"
+        src="https://static.olivierbalaguer.com/audio/20200812_rteradio1-todayradio-beirut.mp3"
         type="audio/mpeg">
           Your browser does not support the <code>audio</code> element.
-        </audio> -->
+        </audio>
       </div>
       <div class="rounded-lg overflow-hidden m-3 p-3" style="background-color: #036">
         <div class="flex justify-center items-center h-32">
           <BBC4 />
         </div>
-        <av-line
+        <!-- <av-line
           :line-width="2"
           line-color="#fff"
-          audio-src="/audio/F2F-BBC-Radio4.mp3"
-        ></av-line>
-        <!-- <audio
+          audio-src="https://static.olivierbalaguer.com/audio/F2F-BBC-Radio4.mp3"
+        ></av-line> -->
+        <audio
         controls
-        src="/audio/F2F-BBC-Radio4.mp3"
+        src="https://static.olivierbalaguer.com/audio/F2F-BBC-Radio4.mp3"
         type="audio/mpeg">
           Your browser does not support the <code>audio</code> element.
-        </audio> -->
+        </audio>
       </div>
     </div>
   </section>
